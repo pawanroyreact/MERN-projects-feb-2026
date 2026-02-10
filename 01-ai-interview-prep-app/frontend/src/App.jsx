@@ -1,35 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
+import LandingPage from "./pages/LandingPage";
+import Login from "./pages/Auth/Login";
+import SignUp from "./pages/Auth/SignUp";
+import Dashboard from "./pages/Home/Dashboard";
+import InterviewPrep from "./pages/InterviewPrep/InterviewPrep";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div>
+      <Router>
+        <Routes>
+          {/* Default Route */}
+          <Route path="/" element={<LandingPage />} />
 
-export default App
+          {/* Other Routes */}
+          <Route path="/login" element={<Login />} />
+          <Route path="/signUp" element={<SignUp />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route
+            path="/interview-prep/:sessionId"
+            element={<InterviewPrep />}
+          />
+        </Routes>
+      </Router>
+
+      <Toaster toastOptions={{ className: "", style: { fontSize: "13px" } }} />
+    </div>
+  );
+};
+
+export default App;
+
+// npm i axios moment framer-motion react-markdown react-syntax-highlighter remark-gfm react-hot-toast react-icons react-router-dom

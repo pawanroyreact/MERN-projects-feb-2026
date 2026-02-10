@@ -1,0 +1,29 @@
+Project 1 : 01-ai-interview-prep-app
+    - Project Duration  : 3:13:45
+    - Start Date        : 10th Feb 2026
+    - Finish Date       : 12th Feb 2026
+    - Delployment Link  : Pending
+
+Project 2 : 02-task-manager-app
+    - Project Duration  : 4:52:23
+    - Start Date        : 13th Feb 2026
+    - Finish Date       : 16th Feb 2026
+    - Delployment Link  : Pending
+
+Project 3 : 03-expense-tracker-app
+    - Project Duration  : 4:10:21
+    - Start Date        : 17th Feb 2026
+    - Finish Date       : 19th Feb 2026
+    - Delployment Link  : Pending
+
+Project 4 : 04-travel-story-app
+    - Project Duration  : 4:35:26
+    - Start Date        : 20th Feb 2026
+    - Finish Date       : 22nd Feb 2026
+    - Delployment Link  : Pending
+
+Project 5 : 05-job-portal-app
+    - Project Duration  : 7:21:00
+    - Start Date        : 23rd Feb 2026
+    - Finish Date       : 28th Feb 2026
+    - Delployment Link  : Pending
