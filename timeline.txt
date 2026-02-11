@@ -1,29 +1,41 @@
 Project 1 : 01-ai-interview-prep-app
     - Project Duration  : 3:13:45
     - Start Date        : 10th Feb 2026
-    - Finish Date       : 12th Feb 2026
+    - Finish Date       : 13th Feb 2026
+    - Toal Days         : 04 Days
     - Delployment Link  : Pending
 
-Project 2 : 02-task-manager-app
-    - Project Duration  : 4:52:23
-    - Start Date        : 13th Feb 2026
-    - Finish Date       : 16th Feb 2026
+Project 2 : 02-hospital-management-app
+    - Project Duration  : 9:57:28
+    - Start Date        : 14th Feb 2026
+    - Finish Date       : 20th Feb 2026
+    - Toal Days         : 07 Days
     - Delployment Link  : Pending
 
-Project 3 : 03-expense-tracker-app
-    - Project Duration  : 4:10:21
-    - Start Date        : 17th Feb 2026
-    - Finish Date       : 19th Feb 2026
-    - Delployment Link  : Pending
-
-Project 4 : 04-travel-story-app
-    - Project Duration  : 4:35:26
-    - Start Date        : 20th Feb 2026
-    - Finish Date       : 22nd Feb 2026
-    - Delployment Link  : Pending
-
-Project 5 : 05-job-portal-app
-    - Project Duration  : 7:21:00
-    - Start Date        : 23rd Feb 2026
+Project 3 : 03-ecommerce-app
+    - Project Duration  : 12:18:01
+    - Start Date        : 21st Feb 2026
     - Finish Date       : 28th Feb 2026
+    - Toal Days         : 08 Days
+    - Delployment Link  : Pending
+
+Project 4 : 04-portfolio-app
+    - Project Duration  : 2:51:43
+    - Start Date        : 1st Mar 2026
+    - Finish Date       : 3rd Mar 2026
+    - Toal Days         : 03 Days
+    - Delployment Link  : Pending
+
+Project 5 : 05-real-time-chat-app
+    - Project Duration  : 10:42:23
+    - Start Date        : 3rd Mar 2026
+    - Finish Date       : 9th Mar 2026
+    - Toal Days         : 07 Days
+    - Delployment Link  : Pending
+
+Project 6 : 06-social-media-marketplace-app
+    - Project Duration  : 11:56:03
+    - Start Date        : 9th Mar 2026
+    - Finish Date       : 15th Mar 2026
+    - Toal Days         : 07 Days
     - Delployment Link  : Pending

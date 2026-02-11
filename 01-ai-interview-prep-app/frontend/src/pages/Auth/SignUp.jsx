@@ -1,9 +1,76 @@
-import React from 'react'
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Input from "../../components/Inputs/Input";
+import ProfilePhotoSelector from "../../components/Inputs/ProfilePhotoSelector";
 
-const SignUp = () => {
+const SignUp = ({ setCurrentPage }) => {
+  const [profilePic, setProfilePic] = useState(null);
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState(null);
+
+  const navigate = useNavigate();
+
+  // Handle SignUp Form Submit
+  const handleSignUp = async (e) => {
+    e.preventDefault();
+  };
   return (
-    <div>SignUp</div>
-  )
-}
+    <div className="w-[90vw] p-7 flex flex-col justify-center md:w-112.5 md:bg-white md:rounded-xl md:shadow-2xl md:border md:border-gray-100 md:p-10 md:mx-auto lg:w-125 lg:p-12 xl:w-137.5">
+      <h3 className="text-lg font-semibold text-black md:text-2xl md:mb-2">
+        Create an Account
+      </h3>
+      <p className="text-shadow-xs text-slate-700 mt-1.25 mb-6 md:text-slate-600 md:text-sm md:mb-8">
+        Join us today by entering your details below.
+      </p>
 
-export default SignUp
+      <form onSubmit={handleSignUp}>
+        <ProfilePhotoSelector image={profilePic} setImage={setProfilePic} />
+        <div>
+          <Input
+            value={fullName}
+            onChange={({ target }) => setFullName(target.value)}
+            label={"Full Name"}
+            placeholder={"John"}
+            type={"text"}
+          />
+          <Input
+            value={email}
+            onChange={({ target }) => setEmail(target.value)}
+            label={"Email"}
+            placeholder={"john@example.com"}
+            type={"email"}
+          />
+          <Input
+            value={password}
+            onChange={({ target }) => setPassword(target.value)}
+            label={"Password"}
+            placeholder={"min 8 characters"}
+            type={"password"}
+          />
+        </div>
+
+        {error && <p className="text-red-500 text-xs pb-2.5">{error}</p>}
+
+        <button type="submit" className="btn-primary md:mt-2">
+          Sign Up
+        </button>
+
+        <p className="text-[13px] text-slate-800 mt-3 md:text-center md:mt-5">
+          Already have an account?{" "}
+          <button
+            className="font-medium text-primary underline cursor-pointer"
+            onClick={() => {
+              setCurrentPage("login");
+            }}
+          >
+            Login
+          </button>
+        </p>
+      </form>
+    </div>
+  );
+};
+
+export default SignUp;
