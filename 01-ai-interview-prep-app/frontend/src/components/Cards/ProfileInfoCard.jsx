@@ -13,19 +13,19 @@ const ProfileInfoCard = () => {
   };
   return (
     user && (
-      <div className="flex items-center">
+      <div className="flex items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity">
         <img
           src={user.profileImageURL}
           alt="profile picture"
-          className="w-11 h-11 bg-gray-300 rounded-full mr-3"
+          className="w-10 h-10 rounded-full object-cover border-2 border-gray-200 hover:border-orange-400 transition-colors"
         />
-        <div>
-          <div className="text-[15px] text-black font-bold leading-3">
-            {user.name || ""}
-          </div>
+        <div className="flex flex-col">
+          <p className="text-sm font-semibold text-gray-900 leading-tight">
+            {user.name || "User"}
+          </p>
           <button
             onClick={handleLogout}
-            className="text-amber-600 text-sm font-semibold cursor-pointer hover:underline"
+            className="text-xs text-orange-600 font-medium hover:text-orange-700 hover:underline transition-colors leading-tight mt-0.5"
           >
             Logout
           </button>
